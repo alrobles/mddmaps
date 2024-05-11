@@ -1,0 +1,26 @@
+Package: mddmaps
+Type: Package
+Title: Download World Mammal Maps
+Version: 1.3.0
+Authors@R: 
+    person("Angel", "Robles", , "a.l.robles.fernandez@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-4674-4270"))
+Description: Connection to a binary backup of
+    Mammal Diversity Database maps from American Society of Mammalogists.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
+LazyData: true
+Imports: 
+    httr,
+    progress,
+    readr,
+    stringr,
+    terra,
+    utils
+URL: https://github.com/alrobles/mdd,
+    https://alrobles.github.io/mdd/
+BugReports: https://github.com/alrobles/mdd/issues    
