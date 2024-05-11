@@ -10,7 +10,7 @@
 #'  \doi{doi:10.5281/zenodo.10806734}
 #' @examples
 #' get_mdd_order(version = "test")
-get_mdd_order <- function(order = "Rodentia", version = "v1_2", dir = NULL){
+get_mdd_order <- function(order , version, dir = NULL){
 
   if(version == "test"){
     url_test <- "https://mdd-aligned-shp-1-0-0.fra1.digitaloceanspaces.com/test"

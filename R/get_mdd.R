@@ -20,19 +20,20 @@ get_mdd <- function(dir = NULL, version = "v1_2"){
     }
   }
 
-  mddSpList <- get(paste0("mddSpList_",version ))
+  #mddSpList <- get(paste0("mddSpList_",version ))
+  mddSpList <- get_mdd_list(version)
   order <- unique(mddSpList$Order)
 
   #### progress call
 
-  map_mdd_progress <- function(.x = order, ...) {
+  map_mdd_progress <- function(.x = order, version, ...) {
     pb <- progress::progress_bar$new(total = length(.x), format = " [:bar] :current/:total (:percent) eta: :eta", force = TRUE)
 
     f <- function(...) {
       pb$tick()
-      get_mdd_order(...)
+      get_mdd_order(...,)
     }
-    Map(f = f, .x )
+    Map(f = f, .x, version )
   }
 
   root <- system.file(package = "mddmaps")

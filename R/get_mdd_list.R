@@ -30,6 +30,6 @@ get_mdd_list <- function(version = "v1_2"){
     return("Can't access mammal data")
   }
 
-  mddSpList <- readr::read_csv(url)
+  mddSpList <- read.csv(url)
   return(mddSpList)
 }
