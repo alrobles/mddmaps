@@ -21,7 +21,8 @@ get_mdd_order <- function(order = "Rodentia", version = "v1_2", dir = NULL){
     }
   }
 
-  mddSpList <- get(paste0("mddSpList_", version ))
+  #mddSpList <- get(paste0("mddSpList_", version ))
+  mddSpList <- get_mdd_list(version)
 
   if(is.na(match(order, mddSpList$Order))){
     stop("Order does not exist! Check spell")

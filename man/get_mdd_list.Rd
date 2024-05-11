@@ -20,5 +20,5 @@ A data.frame object with mammal species by version
 Function to return mammal species list avaliable by version
 }
 \examples{
-get_mdd_list(version = "v1_2")
+get_mdd_list(version = "test")
 }

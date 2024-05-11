@@ -5,7 +5,7 @@
 #' @source Expert range maps of global mammal distributions harmonized to
 #'  three taxonomic authorities \doi{doi:10.5281/zenodo.10806734}
 #' @examples
-#' get_mdd_list(version = "v1_2")
+#' get_mdd_list(version = "test")
 get_mdd_list <- function(version = "v1_2"){
 
   if(version == "test"){
