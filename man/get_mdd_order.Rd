@@ -9,7 +9,7 @@ three taxonomic authorities
 \doi{doi:10.5281/zenodo.10806734}
 }
 \usage{
-get_mdd_order(order = "Rodentia", version = "v1_2", dir = NULL)
+get_mdd_order(order, version, dir = NULL)
 }
 \arguments{
 \item{order}{The mammal order want to  download}

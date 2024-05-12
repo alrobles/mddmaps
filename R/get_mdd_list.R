@@ -1,4 +1,5 @@
 #' Function to return mammal species list avaliable by version
+#' @importFrom utils read.csv
 #' @param version The taxonomy version
 #' @return A data.frame object with mammal species by version
 #' @export

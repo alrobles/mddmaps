@@ -1,5 +1,4 @@
 #' Function to return mammal shapefiles of Rodentia order
-#' @importFrom utils download.file
 #' @param dir A directory where to write the output
 #' @param order The mammal order want to  download
 #' @param version The taxonomy version
@@ -46,7 +45,7 @@ get_mdd_order <- function(order , version, dir = NULL){
       return("Can't access mammal data.")
     }
 
-
+    Sys.sleep(1)
     shp <- readr::read_rds(url)
     readr::write_rds(shp, file = filePath, compress = "xz")
   }

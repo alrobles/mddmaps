@@ -20,8 +20,8 @@ get_mdd <- function(dir = NULL, version = "v1_2"){
     }
   }
 
-  #mddSpList <- get(paste0("mddSpList_",version ))
-  mddSpList <- get_mdd_list(version)
+  mddSpList <- get(paste0("mddSpList_",version ))
+  #mddSpList <- get_mdd_list(version)
   order <- unique(mddSpList$Order)
 
   #### progress call
