@@ -4,3 +4,7 @@
 ^cran-comments\.md$
 ^mddmaps\.Rproj$
 ^data-raw$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
